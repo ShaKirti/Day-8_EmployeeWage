@@ -10,7 +10,7 @@ class WelcomeMessage{
         System.out.println("Welcome to Employee Wage Computation Program.");
     }
     public int attendance(){
-        return new Random().nextInt(3);
+        return new Random().nextInt(2);
 
     }
     public static int dailySalary(){
