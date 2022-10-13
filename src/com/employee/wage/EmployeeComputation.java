@@ -2,8 +2,7 @@ package com.employee.wage;
 public class EmployeeComputation {
     public static void main(String[] args) {
 
-        int wagePerHour=20;
-        int fullDayWorkingHour=8;
+
         int salary=0;
         WelcomeMessage.msg();
         WelcomeMessage attendance = new WelcomeMessage();
@@ -12,7 +11,7 @@ public class EmployeeComputation {
         }
         else {
             System.out.println("Employee is present.");
-            salary = wagePerHour * fullDayWorkingHour;
+            salary=WelcomeMessage.dailySalary();
         }
         System.out.println("Employee Salary is: "+salary);
 

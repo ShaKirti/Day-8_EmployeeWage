@@ -3,7 +3,8 @@ package com.employee.wage;
 import java.util.Random;
 
 class WelcomeMessage{
-    int wagePerHour, fullDayWorkingHour;
+    static int wagePerHour=20;
+    static int fullDayWorkingHour=8;
     static void msg(){
         System.out.println("Welcome to Employee Wage Computation Program.");
     }
@@ -11,7 +12,7 @@ class WelcomeMessage{
         return new Random().nextInt(2);
 
     }
-    public int salary(){
+    public static int dailySalary(){
         return wagePerHour * fullDayWorkingHour;
     }
 }
