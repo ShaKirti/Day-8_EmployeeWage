@@ -5,7 +5,6 @@ import java.util.Random;
 public class EmployeeComputation {
     public static void main(String[] args) {
 
-
         int salary=0;
         WelcomeMessage.msg();
         WelcomeMessage attendance = new WelcomeMessage();
