@@ -8,8 +8,10 @@ public class EmployeeComputation {
         WelcomeMessage attendance = new WelcomeMessage();
         if (attendance.attendance()==0){
             System.out.println("Employee is absent.");
-        }
-        else {
+        } else if (attendance.attendance()==1) {
+            System.out.println("Employee is present for half day.");
+            salary=WelcomeMessage.halfSalary();
+        } else {
             System.out.println("Employee is present.");
             salary=WelcomeMessage.dailySalary();
         }
